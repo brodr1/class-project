@@ -7,19 +7,19 @@ export class CreateModelDto {
     @IsPositive()
     @IsNotEmpty()
     @ApiProperty()
-    brand_id: number;
+    brand_id!: number;
 
     @IsString()
     @IsNotEmpty()
     @MinLength(3)
     @ApiProperty({example: 'Corolla'})
-    name: string;
+    name!: string;
 
     @IsString()
     @IsNotEmpty()
     @MinLength(3)
     @ApiProperty({example: 'Sedan'})
-    type: string;
+    type!: string;
 }
 
 export class UpdateVehicleModelDto extends PartialType(CreateModelDto) {}
