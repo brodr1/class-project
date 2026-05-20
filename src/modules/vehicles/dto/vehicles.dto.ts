@@ -40,7 +40,7 @@ export class CreateVehicleDto {
   @IsPositive()
   @IsOptional()
   @ApiProperty()
-  mileage!: number;
+  milage!: number;
 
   @IsNumber()
   @IsPositive()

@@ -19,7 +19,7 @@ import {
 } from '../dto/vehicles.dto';
 
 @ApiTags('Vehicles')
-@Controller('vehicle')
+@Controller('vehicles')
 export class VehiclesController {
 
   constructor(

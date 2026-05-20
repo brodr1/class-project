@@ -8,43 +8,43 @@ import {
 export class Customer {
 
   @PrimaryGeneratedColumn('increment', { type: 'int4' })
-  id: number;
+  id!: number;
 
   @Column({
     type: 'varchar',
     length: 100,
   })
-  first_name: string;
+  first_name!: string;
 
   @Column({
     type: 'varchar',
     length: 100,
   })
-  last_name: string;
+  last_name!: string;
 
   @Column({
     type: 'varchar',
     length: 20,
     unique: true,
   })
-  cedula: string;
+  cedula!: string;
 
   @Column({
     type: 'varchar',
     length: 20,
   })
-  phone: string;
+  phone!: string;
 
   @Column({
     type: 'varchar',
     length: 150,
     unique: true,
   })
-  email: string;
+  email!: string;
 
   @Column({
     type: 'varchar',
     length: 255,
   })
-  direccion: string;
+  address!: string;
 }
